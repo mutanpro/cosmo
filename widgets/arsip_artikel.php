@@ -24,16 +24,16 @@
 							<tr>
 								<td>
 									<a href="<?= site_url('artikel/'.buat_slug($arsip))?>">
-										<!--<?php if (is_file(LOKASI_FOTO_ARTIKEL."kecil_$arsip[gambar]")): ?>-->
+										<?php if (is_file(LOKASI_FOTO_ARTIKEL."kecil_$arsip[gambar]")): ?>
 											<img class="img-fluid img-thumbnail" src="<?= base_url(LOKASI_FOTO_ARTIKEL."sedang_$arsip[gambar]")?>"/>
-										<!--<?php else: ?>-->
+										<?php else: ?>
 											<img class="img-fluid img-thumbnail" src="<?= base_url("assets/images/404-image-not-found.png")?>"/>
-										<!--<?php endif;?>-->
+										<?php endif;?>
 										<div align="justify">
-											<small style=""><i class="fa fa-file-o"></i>&nbsp;&nbsp;<span class="meta_date"><?= tgl_indo($arsip['tgl_upload']) ?> 
+											<small style=""><span class="meta_date"><?= tgl_indo($arsip['tgl_upload']) ?> 
 											<!--| <i class="fa fa-eye"></i> <?= hit($arsip['hit']) ?></span>-->
 										</small>
-											<br><p style="padding-left: 18px;color: #2e86ab;font-size: 11pt;"><?= $arsip['judul']?></p>
+											<p style="padding-left: 18px;color: #2e86ab;font-size: 11pt;"><?= $arsip['judul']?></p>
 										</div>
 									</a>
 								</td>
