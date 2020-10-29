@@ -2,7 +2,7 @@
 
 <header class="header">
 	<div class="header__group">
-		<a href="<?= site_url('first') ?>" class="header-brand">
+		<a href="<?= site_url('') ?>" class="header-brand">
 			<img src="<?= gambar_desa($desa['logo']) ?>" alt="Logo <?= ucfirst($this->setting->sebutan_desa).' '.ucwords($desa['nama_desa']) ?>" class="header-brand__logo">
 			<div class="header-brand__group">
 				<h1 class="header-brand__title">Sistem Informasi <?= ucfirst($this->setting->sebutan_desa).' '.ucwords($desa['nama_desa']) ?></h1>
