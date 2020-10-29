@@ -1,5 +1,4 @@
 <?php if(!defined('BASEPATH')) exit('No direct script access allowed'); ?>
-
 <?php
 	$title = (!empty($judul_kategori))? $judul_kategori: 'Artikel Terkini';
 	if(is_array($title)){
@@ -22,6 +21,7 @@
 <?php endif ?>
 
 	<section id="news-list">
+		
 		<h3 class="content__heading --mb-4 <?php empty($this->input->get('cari')) AND $headline AND $this->uri->segment(2) != 'kategori' AND print('--mt-5') ?>"><i class="fa fa-newspaper-o"></i> <?= $title ?></h3>
 		<ul class="content__list">
 			<?php if($artikel) : ?>

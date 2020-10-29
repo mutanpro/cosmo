@@ -25,9 +25,9 @@
 								<td>
 									<a href="<?= site_url('artikel/'.buat_slug($arsip))?>">
 										<!--<?php if (is_file(LOKASI_FOTO_ARTIKEL."kecil_$arsip[gambar]")): ?>-->
-											<!--<img class="img-fluid img-thumbnail" src="<?= base_url(LOKASI_FOTO_ARTIKEL."sedang_$arsip[gambar]")?>"/>-->
+											<img class="img-fluid img-thumbnail" src="<?= base_url(LOKASI_FOTO_ARTIKEL."sedang_$arsip[gambar]")?>"/>
 										<!--<?php else: ?>-->
-											<!--<img class="img-fluid img-thumbnail" src="<?= base_url("assets/images/404-image-not-found.png")?>"/>-->
+											<img class="img-fluid img-thumbnail" src="<?= base_url("assets/images/404-image-not-found.png")?>"/>
 										<!--<?php endif;?>-->
 										<div align="justify">
 											<small style=""><i class="fa fa-file-o"></i>&nbsp;&nbsp;<span class="meta_date"><?= tgl_indo($arsip['tgl_upload']) ?> 
