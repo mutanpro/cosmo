@@ -1,6 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-<aside class="sidebar2">
+<aside class="sidebar">
 	<form action="<?= site_url('first') ?>" class="form form--sidebar" method="get">
 		<input type="search" name="cari" class="form__input" placeholder="Cari...">
 		<i class="fa fa-search form__icon"></i>
