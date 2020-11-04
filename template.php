@@ -14,10 +14,10 @@
 			<?php $this->load->view($folder_themes .'/partials/newsticker') ?>
 			<section class="main-wrapper">
 				<main class="content">
-					<?php $this->load->view($folder_themes .'/partials/covid-data');?>
 					<?php $this->load->view($folder_themes .'/layouts/beranda.tpl.php') ?>
 				</main>
 				<?php $this->load->view($folder_themes .'/partials/sidebar.php') ?>
+				
 			</section>
 			<?php $this->load->view($folder_themes .'/commons/footer') ?>
 	<?php endif ?>

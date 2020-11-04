@@ -1,0 +1,133 @@
+/****
+  E
+****/
+.events .event {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+    padding-bottom: 30px;
+  }
+  .events .event:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  .events .event aside {
+    padding-left: 80px;
+  }
+  .events .event aside header {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  .events .event aside .additional-info {
+    color: #767676;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .events .event aside .description p {
+    margin: 0 0 10px 0;
+  }
+  .events .event .date {
+    background-color: #008844;
+    color: #fff;
+    float: left;
+    height: 70px;
+    overflow: hidden;
+    width: 70px;
+  }
+  .events .event .date .day {
+    bottom: 15px;
+    font-size: 60px;
+    font-weight: bold;
+    position: relative;
+    right: -12px;
+  }
+  .events .event .date:hover {
+    color: #f18f01;
+  }
+  .events .event .date .month {
+    font-size: 14px;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .events.grid .event {
+    margin-bottom: 40px;
+    padding-bottom: 50px;
+  }
+  .events.grid .event .btn {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+  }
+  .events.images .event aside {
+    padding-left: 190px;
+  }
+  .events.images .event .event-thumbnail {
+    display: inline-block;
+    float: left;
+    position: relative;
+  }
+  .events.images .event .event-thumbnail .date {
+    bottom: -10px;
+    position: absolute;
+    right: -10px;
+  }
+  .events.images .event .event-thumbnail .event-image {
+    height: 165px;
+    width: 165px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+  }
+  .events.images .event .event-thumbnail .event-image:last-child {
+    margin-right: 0;
+  }
+  .events.images .event .event-thumbnail .event-image .image-wrapper {
+    position: relative;
+    left: 100%;
+    margin-left: -200%;
+    position: relative;
+  }
+  .events.images .event .event-thumbnail .event-image .image-wrapper img {
+    height: 100%;
+    width: auto;
+  }
+  .events.featured .event aside {
+    padding-left: 0;
+  }
+  .events.featured .event aside header {
+    font-size: 14px;
+  }
+  .events.featured .event .event-thumbnail {
+    float: none;
+    margin-bottom: 20px;
+  }
+  .events.featured .event .event-thumbnail .event-image {
+    width: 100%;
+  }
+  .events.small .link-calendar {
+    float: right;
+    position: relative;
+    top: 25px;
+  }
+  .events.small .event {
+    border: none;
+    margin-bottom: 40px;
+    padding: inherit;
+  }
+  .events.small .event aside header {
+    font-size: 14px;
+  }
+  .events.small .event aside .additional-info {
+    color: #767676;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  .events.small .event .date {
+    background-color: #c5c5c5;
+  }
+  .events.small .event.nearest .date {
+    background-color: #2e86ab;
+  }
+  .events.small .event.nearest-second .date {
+    background-color: #ea6645;
+  }

@@ -1,47 +1,71 @@
 <!-- widget Arsip Artikel -->
 
 <style type="text/css">
-	#arsip_artikel .nav > li.active > a { color: green }
-	#arsip_artikel img { width: 30%; margin:0 6px 4px 0; float: left;}
-	#arsip_artikel td { padding-bottom: 2px; }
+	#arsip_artikel .nav>li.active>a {
+		color: green
+	}
+
+	#arsip_artikel img {
+		width: 100%;
+		/*margin: 0 6px 4px 0;*/
+		float: left;
+	}
+
+	#arsip_artikel.events .event aside {
+		padding-left: 0px;
+	}
+
+	.nomer {
+		/*flex-shrink: 0;
+		content: '0'counter(popular-count);
+		counter-increment: popular-count;
+		width: 45px;
+		padding-top: 5px;
+		font-size: 26px;
+		color: rgba(0, 0, 0, .20);*/
+		color: rgba(0, 0, 0, .20);
+		float: left;
+		/*height: 70px;*/
+		overflow: hidden;
+		flex-shrink: 0;
+		width: 70px;
+		font-size: 50px;
+		text-align: center;
+		margin-top: -10px;
+
+	}
 </style>
 <div class="box box-primary box-solid">
 	<div class="box-header">
-		<h3 class="box-title"><a href="<?= site_url("arsip")?>"><i class="fa fa-archive"></i> Artikel Pilihan</a></h3>
+		<h3 class="box-title"><a href="<?= site_url("arsip") ?>"><i class="fa fa-archive"></i> Artikel Pilihan</a></h3>
 	</div>
-	<div id="arsip_artikel" class="box-body">
-		<!--<ul class="nav nav-tabs">-->
-			<!--<li class="active"><a data-toggle="tab" href="#terkini">Terkini</a></li>-->
-			<!--<li><a data-toggle="tab" href="#populer">Populer</a></li>-->
-			<!--<li><a data-toggle="tab" href="#acak">Acak</a></li>-->
-		<!--</ul>-->
-		<div class="">
+	<section id="arsip_artikel" class="box-body events small">
+		<div class="section-content">
+			<?php foreach (array('populer' => 'arsip_terkini') as $jenis => $jenis_arsip) : ?>
+				<?php foreach ($$jenis_arsip as $k => $arsip) :
+					if ($k < 5) { ?>
+						<?php $abstract = potong_teks(strip_tags($arsip['isi']), 90) ?>
+						<article class="event ">
 
-			<?php foreach (array( 'populer' => 'arsip_populer') as $jenis => $jenis_arsip) : ?>
-				<div id="<?= $jenis ?>" class="tab-pane fade in <?php ($jenis == 'terkini') and print('active') ?>">
-					<table>
-						<?php foreach ($$jenis_arsip as $arsip): ?>
-							<tr>
-								<td>
-									<a href="<?= site_url('artikel/'.buat_slug($arsip))?>">
-										<?php if (is_file(LOKASI_FOTO_ARTIKEL."kecil_$arsip[gambar]")): ?>
-											<img class="img-fluid img-thumbnail" src="<?= base_url(LOKASI_FOTO_ARTIKEL."sedang_$arsip[gambar]")?>"/>
-										<?php else: ?>
-											<img class="img-fluid img-thumbnail" src="<?= base_url("assets/images/404-image-not-found.png")?>"/>
-										<?php endif;?>
-										<div align="justify">
-											<small style=""><span class="meta_date"><?= tgl_indo($arsip['tgl_upload']) ?> 
-											<!--| <i class="fa fa-eye"></i> <?= hit($arsip['hit']) ?></span>-->
-										</small>
-											<p style="padding-left: 18px;color: #2e86ab;font-size: 11pt;"><?= $arsip['judul']?></p>
-										</div>
-									</a>
-								</td>
-							</tr>
-						<?php endforeach; ?>
-					</table>
-				</div>
+							<div class="nomer">
+
+								0<?= $k + 1 ?>
+							</div>
+							<aside>
+								<header> <a href="<?= site_url('artikel/' . buat_slug($arsip)) ?>" style="font-weight: 800;" title="<?= $arsip['judul'] ?>"> <?= $arsip['judul'] ?> </a> </header>
+								<p class="additional-info">
+
+									<?= html_bersih($abstract) ?>
+
+
+								</p>
+							</aside>
+						</article>
+				<?php }
+				endforeach ?>
 			<?php endforeach ?>
+
 		</div>
-	</div>
+
+	</section>
 </div>

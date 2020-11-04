@@ -25,7 +25,6 @@ if (
 <?php endif ?>
 
 <section id="news-list">
-
 	<h3 class="content__heading --mb-4 <?php empty($this->input->get('cari')) and $headline and $this->uri->segment(2) != 'kategori' and print('--mt-5') ?>"><i class="fa fa-newspaper-o"></i> <?= $title ?></h3>
 	<ul class="content__list">
 		<?php if ($artikel) : ?>
@@ -40,3 +39,4 @@ if (
 	</ul>
 	<?php $this->load->view($folder_themes . '/commons/paging') ?>
 </section>
+
