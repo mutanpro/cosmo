@@ -2,6 +2,8 @@
 
 <?php if ($transparansi) $this->load->view($folder_themes . '/partials/apbdesa', $transparansi) ?>
 
+
+
 <!-- ANDA TIDAK DIPERKENANKAN MENGHAPUS/MEMODIFIKASI LINK KREDIT DI BAWAH INI. -->
 <!-- Dengan tetap mencantumkan link kredit, berarti Anda turut mendukung dan mengapresiasi pengembang tema. -->
 <footer class="footer">

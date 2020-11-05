@@ -16,7 +16,7 @@
 				<main class="content">
 					<?php $this->load->view($folder_themes .'/layouts/beranda.tpl.php') ?>
 				</main>
-				<?php $this->load->view($folder_themes .'/partials/sidebar.php') ?>
+				<?php $this->load->view($folder_themes .'/partials/sidebar_beranda.php') ?>
 				
 			</section>
 			<?php $this->load->view($folder_themes .'/commons/footer') ?>

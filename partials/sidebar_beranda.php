@@ -11,8 +11,7 @@
 				<?php continue; ?>
 			<?php endif ?>
 			<div class="sidebar__item">
-				<!-- include('donjo-app/views/widgets/'.$widget['isi'])-->
-				<?php $else = ['aparatur_desa.php', 'layanan_mandiri.php'];
+				<?php $else = ['arsip_artikel.php'];
 				if (!in_array($widget['isi'], $else)) {
 					$this->load->view($folder_themes . '/widgets/' . $widget['isi']);
 				}

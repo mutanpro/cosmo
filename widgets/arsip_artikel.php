@@ -41,7 +41,7 @@
 	</div>
 	<section id="arsip_artikel" class="box-body events small">
 		<div class="section-content">
-			<?php foreach (array('populer' => 'arsip_terkini') as $jenis => $jenis_arsip) : ?>
+			<?php foreach (array('populer' => 'arsip_populer') as $jenis => $jenis_arsip) : ?>
 				<?php foreach ($$jenis_arsip as $k => $arsip) :
 					if ($k < 5) { ?>
 						<?php $abstract = potong_teks(strip_tags($arsip['isi']), 90) ?>

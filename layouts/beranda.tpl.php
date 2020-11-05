@@ -32,6 +32,11 @@ if (
 				<?php $data['article'] = $article ?>
 				<?php $this->load->view($folder_themes . '/partials/article_list', $data) ?>
 			<?php endforeach ?>
+		<?php elseif ($aparatur) : ?>
+			<?php foreach ($aparatur as $aparat) : ?>
+				<?php $data['aparatur'] = $aparat ?>
+				<?php $this->load->view($folder_themes . '/partials/aparatur', $data) ?>
+			<?php endforeach ?>
 		<?php else : ?>
 			<?php $data['title'] = $title ?>
 			<?php $this->load->view($folder_themes . '/partials/empty_article', $data) ?>
