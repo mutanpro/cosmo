@@ -78,6 +78,9 @@
 		<div id="container" align="center">
 			<table cellpadding="0" cellspacing="0" class="counter">
 				<tr>
+					<td> Pengguna Aktif</td>
+					<td><?= num_toimage(count($_SESSION['artikel']), $total); ?></td>
+				</tr><tr>
 					<td> Hari ini</td>
 					<td><?= num_toimage($today, $total); ?></td>
 				</tr>
