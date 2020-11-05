@@ -9,14 +9,14 @@
 		<!--<h4 class="content__title"><a href="<?= $url ?>"><?= $aparatur['nama'] ?></a></h4>-->
 
 		<div class="additional-info">
-			<table class="table table-striped table-bordered no-footer" width="100%">
+			<table class="" width="100%">
 				<tr class="content__title">
 					<td colspan="3"><?= $aparatur['nama'] ?></td>
 				</tr>
 				<tr>
-					<td>Jabatan</td>
-					<td>:</td>
-					<td><?= $aparatur['jabatan'] ?></td>
+					<td width="20%">Jabatan</td>
+					<td width="5%">:</td>
+					<td width="80%"><?= $aparatur['jabatan'] ?></td>
 				</tr>
 				<tr>
 					<td>NIAP</td>
