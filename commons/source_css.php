@@ -12,3 +12,5 @@
 <link rel="stylesheet" href="<?= base_url("$this->theme_folder/$this->theme/assets/css/font.css") ?>">
 <link rel="stylesheet" href="<?= base_url("$this->theme_folder/$this->theme/assets/css/style.min.css?v2.0-beta") ?>">
 <link rel="stylesheet" href="<?= base_url('desa/themes/cosmo/assets/css/mutan.css') ?>">
+
+<link rel="stylesheet" href="<?= base_url('desa/themes/cosmo/assets/css/bootstrap.min.css') ?>">

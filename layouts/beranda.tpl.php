@@ -36,6 +36,11 @@ if (
 			<?php foreach ($aparatur['daftar_perangkat'] as $aparat) : ?>
 				<?php $data['aparatur'] = $aparat ?>
 				<?php $this->load->view($folder_themes . '/partials/aparatur', $data) ?>
+			<?php endforeach ?> <?php elseif ($agenda) : ?>
+			<?php foreach ($agenda as $agendas) : ?>
+				<?php $data['agenda'] = $agendas ?>
+				
+				<?php $this->load->view($folder_themes . '/partials/agenda.php', $data) ?>
 			<?php endforeach ?>
 		<?php else : ?>
 			<?php $data['title'] = $title ?>
