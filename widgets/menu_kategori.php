@@ -42,11 +42,11 @@
 		<div class="widget-content cloud-label-widget-content ">
 			<?php foreach ($menu_kiri as $data) { ?>
 				<span class="label-size label-size-5">
-					<a dir="ltr" href="<?= site_url('first/kategori/') . $data['slug'] ?>" title="<?= $data['nama'] ?>"><?= $data['nama'] ?></a>
+					<a dir="ltr" href="<?= site_url('first/kategori/') . $data['slug'] ?>" title="<?= $data['kategori'] ?>"><?= $data['kategori'] ?></a>
 				</span>
 				<?php foreach ($data['submenu'] as $submenu) : ?>
 					<span class="label-size label-size-5">
-						<a dir="ltr" href="<?= site_url('first/kategori/') . $submenu['slug'] ?>" title="<?= $submenu['nama'] ?>"><?= $submenu['nama'] ?></a>
+						<a dir="ltr" href="<?= site_url('first/kategori/') . $submenu['slug'] ?>" title="<?= $submenu['kategori'] ?>"><?= $submenu['kategori'] ?></a>
 					</span>
 				<?php endforeach; ?>
 			<?php } ?>
